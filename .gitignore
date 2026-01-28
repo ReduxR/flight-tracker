@@ -1,0 +1,26 @@
+# Ignore build outputs
+/build/
+*.o
+*.obj
+*.exe
+*.out
+*.a
+*.so
+*.dll
+
+# Ignore editor/IDE temp files
+*.log
+*.tmp
+*.swp
+*.swo
+*.bak
+*.user
+*.vcxproj.*
+*.idea/
+*.vscode/
+
+# ignore OC - created files
+*.DS_Store
+
+#ignore maven target files
+/target/
