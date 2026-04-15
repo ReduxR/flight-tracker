@@ -3,7 +3,6 @@
 Flight Tracker is a Java desktop application that allows users to fetch and view real-time flight information using an external REST API.  
 The application provides a simple graphical interface for entering a flight IATA code and displays structured information about the airline, departure, and arrival.
 
----
 
 ## Features
 
@@ -14,7 +13,6 @@ The application provides a simple graphical interface for entering a flight IATA
 - External configuration via properties file
 - Clean separation between API, business logic, data models, and GUI
 
----
 
 ## Technologies Used
 
@@ -24,7 +22,6 @@ The application provides a simple graphical interface for entering a flight IATA
 - Gson (JSON parsing)
 - Maven (build and dependency management)
 
----
 
 ## Application Architecture
 
@@ -51,7 +48,6 @@ The project is structured to clearly separate responsibilities:
 - **FlightGUI**  
   Swing-based graphical user interface for user interaction and data presentation.
 
----
 
 ## API and Data Source
 
@@ -62,7 +58,6 @@ https://aviationstack.com/
 
 The API returns flight information in JSON format, which is deserialized into Java objects for further processing.
 
----
 
 ## Configuration
 
@@ -79,7 +74,6 @@ Before running the application, you must provide your own API key.
 
 The API key is intentionally not hardcoded and is loaded at runtime via the configuration file.
 
----
 
 ## Caching
 
@@ -90,7 +84,6 @@ To minimize unnecessary API calls, the application implements a simple local cac
 - Cache files are stored in the `cache/` directory which will be created after the first API request
 - The cache directory is created automatically if it does not exist
 
----
 
 ## Running the Application
 
@@ -104,7 +97,6 @@ To minimize unnecessary API calls, the application implements a simple local cac
 
 Make sure the `config.properties` file is present and correctly configured before running.
 
----
 
 ## Notes
 
@@ -112,7 +104,6 @@ Make sure the `config.properties` file is present and correctly configured befor
 - All core logic is independent of the GUI and can be reused or extended
 - The application can be easily expanded with additional flight details or UI improvements
 
----
 
 ## Extensibility
 
